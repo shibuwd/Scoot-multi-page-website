@@ -5,11 +5,209 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Frontend Mentor | Scoot</title>
 </head>
 
 <body>
 
+    <!-- header section -->
+    <header>
+        <section id="header">
+            <div class="header container">
+                <nav>
+                    <div class="nav-bar">
+                        <div class="logo">
+                            <a href=""><img src="./assets/logo.svg"></a>
+                        </div>
+                        <div class="nav-list">
+                            <div class="hamburger">
+                                <div class="bar"></div>
+                            </div>
+                            <ul class="nav-item">
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">Location</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <a class="btn" href="#">Get Scootin</a>
+                            </ul>
+                        </div>
+                        <!-- <div class="nav-btn">
+                            <a class="btn" href="">Get Scootin</a>
+                        </div> -->
+                    </div>
+                </nav>
+            </div>
+
+            <!-- hero section -->
+            <section class="hero">
+                <div class="hero-container">
+                    <picture>
+                        <source media="(min-width: 57.5rem)" srcset="./assets/img/home-hero-desktop.jpg">
+                        <source media="(min-width: 48rem)" srcset="./assets/img/home-hero-tablet.jpg">
+                        <img src="./assets/img/home-hero-mobile.jpg" alt="">
+                    </picture>
+                    <div class="hero-desc">
+                        <div class="text">
+                            <h1>Scooter sharing made simple</h1>
+                            <p>Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient
+                                locations in
+                                each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and
+                                you’re
+                                away!
+                            </p>
+                        </div>
+                        <a class="btn" href="#">Get Scootin</a>
+                    </div>
+                    <div class="right-arrow">
+                        <picture>
+                            <source media="(min-width: 48rem)" srcset="./assets/patterns/right-arrow.svg">
+                            <img src="./assets/patterns/right-arrow-half.svg" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+            <!-- end hero section -->
+        </section>
+    </header>
+    <!-- end header section -->
+
+
+    <!-- main section -->
+    <main>
+        <div class="main-container">
+
+            <!-- services section -->
+            <section>
+                <div class="services">
+                    <div class="service">
+                        <div class="icon">
+                            <img src="./assets/icons/locate.svg" alt="">
+                        </div>
+                        <div class="service-text">
+                            <h2>Locate with app</h2>
+                            <p>Use the app to find the nearest scooter to you. We are continuously placing scooters in
+                                the areas with most demand, so one should never be too far away.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service">
+                        <div class="icon">
+                            <img src="./assets/icons/scooter2.svg" alt="">
+                        </div>
+                        <div class="service-text">
+                            <h2>Pick your scooter</h2>
+                            <p>We show the most important info for the scooters closest to you. So you know how much
+                                charge they have left and can see roughly how much it will cost.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service">
+                        <div class="icon">
+                            <img src="./assets/icons/ride.svg" alt="">
+                        </div>
+                        <div class="service-text">
+                            <h2>Enjoy the ride</h2>
+                            <p>Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and
+                                you’re off! Always lock bikes away from walkways and accessibility ramps.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end services section -->
+
+            <!-- facility section -->
+            <div class="facility-container">
+                <div class="facility plot-1">
+                    <picture>
+                        <source media="(min-width: 48rem)" srcset="./assets/patterns/left-downward-arrow.svg">
+                        <img src="./assets/patterns/left-downward-arrow.svg" alt="">
+                    </picture>
+                    <div class="facility-img">
+                        <img src="./assets/img/telemetry.jpg" alt="">
+                    </div>
+                    <div class="facility-text">
+                        <h3>Easy to use riding telemetry</h3>
+                        <p>The Scoot app is available with riding telemetry. This means it can show you your average
+                            speed, how long you've been using the scooter, your traveling distance, and many more things
+                            all in an easy to use app.
+                        </p>
+                    </div>
+                    <a class="btn" href="">learn more</a>
+                </div>
+
+                <div class="facility plot-2">
+                    <picture>
+                        <source media="(min-width: 48rem)" srcset="./assets/patterns/right-arrow.svg">
+                        <img src="./assets/patterns/right-arrow.svg" alt="">
+                    </picture>
+                    <div class="facility-img">
+                        <img src="./assets/img/near-you.jpg" alt="">
+                    </div>
+                    <div class="facility-text">
+                        <h3>Coming to a city near you</h3>
+                        <p>Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us
+                            know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23
+                            cities over the coming year.
+                        </p>
+                    </div>
+                    <a class="btn" href="">learn more</a>
+                </div>
+
+                <div class="facility plot-3">
+                    <picture>
+                        <source media="(min-width: 48rem)" srcset="./assets/patterns/left-downward-arrow.svg">
+                        <img src="./assets/patterns/left-downward-arrow.svg" alt="">
+                    </picture>
+                    <div class="facility-img">
+                        <img src="./assets/img/payments.jpg" alt="">
+                    </div>
+                    <div class="facility-text">
+                        <h3>Zero hassle payments</h3>
+                        <p>Our payment is as easy as one two three. We accept most credit cards and debit cards. You can
+                            also link your PayPal account inside the app. Need to pay later? No worries! You can defer
+                            payment for up to a month.
+                        </p>
+                    </div>
+                    <a class="btn" href="">learn more</a>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </main>
+    <!-- end main section -->
+
+
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
