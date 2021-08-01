@@ -3,6 +3,7 @@
 :root {
     /* colors */
     --yellow: hsl(40, 97%, 58%);
+    --dark: hsl(215, 14%, 23%);
     --dark-navy: hsl(216, 17%, 35%);
     --dim-grey: hsl(217, 12%, 62%);
     --light-grey: hsl(212, 41%, 93%);
@@ -359,3 +360,88 @@
     margin-bottom: 1.5rem;
 }
 /* end facility section */
+
+
+/* sign up section */
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark-navy);
+    color: var(--light-grey);
+    height: 320px;
+    position: relative;
+}
+
+.signup picture {
+    position: absolute;
+}
+
+.signup h4 {
+    font-size: var(--fs-m-v2-700);
+    text-align: center;
+}
+
+.signup-icon {
+    display: flex;
+}
+
+.signup-icon img {
+    width: 115px; 
+    margin: 2rem .5rem;
+}
+
+/* end sign up section */
+
+
+/* footer section */
+.footer-info {
+    background-color: var(--dark);
+     height: 440px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+
+.footer-logo img {
+    width: 110px;
+    filter: brightness(0) invert(1);
+}
+
+.nav-links {
+    margin: 2rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: var(--light-grey);
+    text-transform: capitalize;
+    font-family: var(--ff-heading);
+    transition: .6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.nav-links  a:hover,
+.nav-links a:focus {
+    color: var(--yellow);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.4rem;
+    font-size: 1.7rem;
+    margin-top: 3rem;
+}
+
+.social-icons a {
+    color: var(--yellow);
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+    color: var(--snow);
+}
