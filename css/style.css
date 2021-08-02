@@ -354,15 +354,13 @@
     flex-direction: column;
     background-color: var(--dark-navy);
     color: var(--light-grey);
-    height: 320px;
     position: relative;
-        overflow-x: hidden;
+    padding: 3rem 1rem;
 }
 
 .signup picture {
     position: absolute;
     bottom: 0;
-
 }
 
 .signup h4 {
@@ -371,13 +369,20 @@
 }
 
 .signup-icon {
-    display: flex;
-    flex-direction: column;
-}
-
-.signup-icon img {
     margin: 1rem .5rem;
 }
+
+.signup-icon {
+    padding: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
 /* end sign up section */
 
 
@@ -640,5 +645,5 @@
     top: 10%;
     left: 65%;
 }
-
 }
+/* end media query for desktop */
