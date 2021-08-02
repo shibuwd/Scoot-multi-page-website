@@ -48,7 +48,7 @@
 
  picture,
  img {
-     width: 100%;
+     min-width: 100%;
      display: block;
  }
 
@@ -255,6 +255,7 @@
     bottom: 4%;
     left: 0;
 }
+
 /* end hero section */
 
 
@@ -292,58 +293,56 @@
 .facility {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    padding: 0 1.35rem;
-    margin-bottom: 6rem;
-}
-
-.facility-img {
+    text-align: center;
     position: relative;
+    overflow-x: hidden;
+    margin-bottom: 5rem;
 }
 
-.facility picture {
+.item-one picture {
     position: absolute;
-    transform: scale(1.2);
-    right: 0%;
-    left: 20%;
-    margin-top: 13.7rem;
-    z-index: 9;
+    top: 26%;
+    left: 2%;
 }
 
-.plot-2 picture {
+.item-two picture {
     position: absolute;
-    left: -40%;
-    margin-top: 4rem;
-    z-index: 9;
+    top: 5%;
+    right: 50%;
 }
 
-.plot-3 picture {
-     position: absolute;
-     transform: scale(1.4);
-     right: 0%;
-     left: 55%;
-     margin-top: 2.4rem;
-     z-index: 9;
+.item-three picture {
+    position: absolute;
+    top: 2%;
+    left: 35%;
 }
 
-.facility-img img {
-    width: 316px;
+.images .image {
+    width: 410px;
     border-radius: 50%;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.facility-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1.35rem;
 }
 
 .facility-text h3 {
-    text-align: center;
     font-size: var(--fs-m-v2-700);
     color: var(--dark-navy);
-    padding: 2rem 0;
-    margin-top: 2rem;
 }
 
 .facility p {
-    text-align: center;
-    color: var(--dim-grey);
-    margin-bottom: 1.5rem;
+    color: var(--dark-navy);
+    padding: 2rem 0;
 }
+
 /* end facility section */
 
 
@@ -357,10 +356,13 @@
     color: var(--light-grey);
     height: 320px;
     position: relative;
+        overflow-x: hidden;
 }
 
 .signup picture {
     position: absolute;
+    bottom: 0;
+
 }
 
 .signup h4 {
@@ -370,11 +372,11 @@
 
 .signup-icon {
     display: flex;
+    flex-direction: column;
 }
 
 .signup-icon img {
-    width: 115px; 
-    margin: 2rem .5rem;
+    margin: 1rem .5rem;
 }
 /* end sign up section */
 
@@ -531,30 +533,6 @@
     width: 100%;
 }
 
-.facility picture {
-    transform: scale(1);
-    right: 0%;
-    left: 20%;
-    margin-top: 10rem;
-}
-
-.plot-2 picture {
-    transform: scale(.5);
-    left: -25%;
-    margin-top: -6rem;
-}
-
-.plot-3 picture {
-    transform: scale(1);
-    left: 45%;
-    margin-top: 2.4rem;
-}
-
-.signup picture {
-    position: absolute;
-    bottom: 0;
-}
-
 .footer-info {
     display: flex;
     flex-direction: row;
@@ -576,7 +554,7 @@
 
 
 /* media query for desktop */
-@media only screen and (min-width: 1120px) {
+@media only screen and (min-width: 920px) {
 .services {
     display: flex;
     padding: 8rem 2rem;
@@ -610,6 +588,57 @@
     bottom: 15rem;
 }
 
+.facility {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding: 0 4rem;
+}
 
+.facility h3 {
+    font-size: var(--fs-v2-700);
+    max-width: 500px;
+}
+
+.facility p {
+    max-width: 500px;
+}
+
+.item-one {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.item-three {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.facility .images {
+    flex: 1;
+    max-width: 650px
+}
+
+.facility .facility-text {
+    flex: 1;
+    max-width: 650px;
+    align-items: flex-start;
+}
+
+.item-one picture {
+    top: 46%;
+    left: 55%;
+}
+
+.item-two picture {
+    top: 0%;
+    right: 40%;
+    transform: scale(.5);
+}
+
+.item-three picture {
+    top: 10%;
+    left: 65%;
+}
 
 }
