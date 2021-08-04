@@ -12,7 +12,7 @@
     --fs-m-v1-700: 2.5rem;
     --fs-m-v2-700: 2rem;
     --fs-m-v3-700: 1.5rem;
-    --fs-m-v4-700: 1.25rem;
+    --fs-m-v4-700: 1.125rem;
 
     /* font familly for tablet & desktop*/
     --ff-body: 'Lexend Deca', sans-serif;
@@ -55,3 +55,167 @@
 }
 /* end hero section */
 
+
+/* facility section */
+.facility-container {
+    margin: 5rem 0;
+}
+
+.facility .facility-text h2 {
+    font-size: var(--fs-m-v2-700);
+    color: var(--dark-navy);
+}
+/* end facility section */
+
+
+/* our values section */
+.value {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.value h3 {
+    font-size: var(--fs-m-v2-700);
+    color: var(--dark-navy);
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+}
+
+.value-img {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.value-img img {
+    border-radius: 50%;
+}
+
+.fill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--yellow);
+    height: 96px;
+    width: 96px;
+    border-radius: 50%;
+    font-size: var(--fs-m-v3-700);
+    color: var(--dark-navy);
+    position: absolute;
+    top: 75%;
+    right: 30%;
+    z-index: 999;
+    font-family: var(--ff-heading);
+}
+
+.value-text h4 {
+    font-size: var(--fs-m-v3-700);
+    font-family: var(--ff-heading);
+    color: var(--dark-navy);
+    padding: 1.2rem 0;
+    color: var(--dark-navy);
+}
+
+.value-text p {
+    color: var(--dark-navy);
+}
+/* end our value section */
+
+
+/* FAQs section */
+.faqs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.faqs-all {
+    padding: 1rem 1.5rem;
+}
+
+.faqs-container h5 {
+    font-size: var(--fs-m-v2-700);
+    color: var(--dark-navy);
+    padding: 2rem 0;
+}
+
+.faqs-desc {
+    background-color: var(--snow);
+    padding: 1.2rem 1.8rem;
+    width: 90vw;
+    transition: .6s cubic-bezier(0.12, 0, 0.39, 0);
+    margin-bottom: 1.2rem;
+}
+
+.faqs-desc:hover,
+.faqs-desc:focus {
+    background: #FFF4E0;
+}
+
+.faqs-heading h6 {
+    font-size: var(--fs-m-v3-700);
+    color: var(--dark-navy);
+    margin-bottom: 2rem;
+}
+
+.faqs-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+ .faqs-icon span {
+    font-size: var(--fs-m-v4-700);
+    font-family: var(--ff-heading);
+    color: var(--dim-grey);
+    text-align: left;
+    padding: 1.2rem 0;
+}
+
+.faqs-text p {
+    text-align: left;
+    color: var(--dark);
+    /* cursor: pointer; */
+}
+
+.faqs-text {
+    display: none;
+    animation-name: faqs-text;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes faqs-text {
+    from {
+    opacity: 0;
+    }
+
+    top {
+    opacity: 1;
+    }
+}
+
+.active span {
+   color: var(--dark);
+}
+
+.arrow-active {
+transform: scaleY(-1);
+}
+
+.safe-driving {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.safe-driving h6 {
+    text-align: center;
+    margin-top: 3rem;
+}

@@ -21,3 +21,24 @@ menu_item.forEach((item) => {
     mobile_menu.classList.toggle('active');
   });
 });
+
+let faqsRow = document.querySelectorAll(".faqs-icon");
+let arrow = document.querySelectorAll(".chevron");
+
+for (let i = 0; i < faqsRow.length; i++) {
+    faqsRow[i].addEventListener("click", () => {
+        console.log(faqsRow[i]);
+        let focusFaqs = faqsRow[i];
+       focusFaqs.classList.toggle("active");
+       arrow[i].classList.toggle("arrow-active");
+
+    //    open FAQs answer when title container is clicked
+       let text = focusFaqs.nextElementSibling;
+        console.log(text);
+        if(text.style.display === "block") {
+            text.style.display = "none";
+        } else {
+            text.style.display = "block";
+        }
+    })
+}
