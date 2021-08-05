@@ -31,19 +31,6 @@
     --fw-700: 700;
 }
 
-
-/* .hero-desc {
-    display: flex;
-    flex-direction: row;
-}
-
-.hero-desc .text h1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 3rem;
-} */
-
 /* hero section */
 
 .hero-desc .text h1 {
@@ -69,19 +56,20 @@
 
 
 /* our values section */
+.values-container h3 {
+    font-size: var(--fs-m-v2-700);
+    color: var(--dark-navy);
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
 .value {
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
     padding: 0 1.1rem;
-    margin-bottom: 3rem;
-}
-
-.value h3 {
-    font-size: var(--fs-m-v2-700);
-    color: var(--dark-navy);
-    padding: 1rem 0;
     margin-bottom: 3rem;
 }
 
@@ -206,7 +194,7 @@
 }
 
 .arrow-active {
-transform: scaleY(-1);
+    transform: scaleY(-1);
 }
 
 .safe-driving {
@@ -219,3 +207,90 @@ transform: scaleY(-1);
     text-align: center;
     margin-top: 3rem;
 }
+/* end FAQs section */
+
+
+/* media query for tablet */
+@media only screen and (min-width: 768px) {
+    .white-circle {
+        display: block;
+    }
+
+    .hero-desc {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-desc .text h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+  }
+
+  .facility .facility-text h2 {
+      font-size: var(--fs-v2-700);
+      width: 485px;
+      text-align: center;
+  }
+
+  .facility .facility-text p {
+      width: 620px;
+  }
+
+  .values-container h3 {
+      font-size: var(--fs-v2-700);
+  }
+
+  .value-text h4 {
+      font-size: var(--fs-m-v2-700);
+  }
+
+  .value-text p {
+      width: 490px;
+  }
+}
+/* end media query for tablet */
+
+
+/* media query for desktop */
+@media only screen and (min-width: 920px) {
+    .facility .facility-text h2 {
+        text-align: left;
+    }
+
+    .facility .facility-text {
+        flex: 1;
+        max-width: 650px;
+        align-items: flex-start;
+        padding: 2rem 5.35rem;
+    }
+
+    .values-container {
+        text-align: center;
+    }
+
+    .values {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .value-text p {
+        width: 350px;
+    }
+
+    .faqs-heading h6 {
+        font-size: var(--fs-v3-700);
+    }
+
+    .active span {
+        font-size: var(--fs-v4-700);
+    }
+
+    .faqs-icon span {
+        font-size: var(--fs-v4-700);
+    }
+}
+/* end media query for desktop */
