@@ -285,12 +285,5 @@
         font-size: var(--fs-v3-700);
     }
 
-    .active span {
-        font-size: var(--fs-v4-700);
-    }
-
-    .faqs-icon span {
-        font-size: var(--fs-v4-700);
-    }
 }
 /* end media query for desktop */
