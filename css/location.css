@@ -1,0 +1,125 @@
+:root {
+    /* colors */
+    --yellow: hsl(40, 97%, 58%);
+    --dark: hsl(215, 14%, 23%);
+    --dark-navy: hsl(216, 17%, 35%);
+    --dim-grey: hsl(217, 12%, 62%);
+    --light-grey: hsl(212, 41%, 93%);
+    --snow: hsl(214, 37%, 96%);
+    --light-yellow: hsl(39, 100%, 94%);
+
+    /* font size for mobile */
+    --fs-m-v1-700: 2.5rem;
+    --fs-m-v2-700: 2rem;
+    --fs-m-v3-700: 1.5rem;
+    --fs-m-v4-700: 1.125rem;
+
+    /* font familly for tablet & desktop*/
+    --ff-body: 'Lexend Deca', sans-serif;
+    --ff-heading: 'Space Mono', monospace;
+
+    /* font size */
+    --fs-400: .938rem;
+    --fs-v1-700: 3.5rem;
+    --fs-v2-700: 3rem;
+    --fs-v3-700: 2.5rem;
+    --fs-v4-700: 1.5rem;
+    --fs-v5-700: 1.125rem;
+
+    /* font weight */
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+/* map section */
+
+.map-img {
+    padding: 1.5rem 2rem;
+}
+
+.map-img img {
+    width: 100%;
+    height: auto;
+    background-color: var(--snow);
+}
+
+.mobile-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mobile-desc ul li {
+    width: 80vw;
+    padding: 1rem;
+    background: var(--light-yellow);
+    margin-bottom: .7rem;
+    font-size: var(--fs-m-v3-700);
+    text-transform: capitalize;
+    font-family: var(--ff-heading);
+    color: var(--dark-navy);
+}
+/* end map section */
+
+
+/* city section */
+.city-desc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+
+.city-desc h2 {
+    font-size: var(--fs-m-v2-700);
+    color: var(--dark);
+    font-size: var(--fs-v2-700);
+}
+
+.city-desc p {
+    color: var(--dark);
+    padding: 1rem 0;
+}
+/* end city section */
+
+
+/* media query for tablet */
+@media only screen and (min-width: 768px) {
+    .map-container {
+        padding: 3rem 3.5rem;
+    }
+    .mobile-desc {
+        display: none;
+    }
+    .city-container {
+        padding: 3rem 3.5rem;
+    }
+}
+/* end media query for tablet */
+
+
+/* media query for desktop */
+@media only screen and (min-width: 920px) {
+    .city-desc {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .city-desc h2 {
+        max-width: 350px;
+        flex: 1;
+    }
+
+    .city-desc p {
+        max-width: 440px;
+        flex: 2;
+    }
+
+}
+
+/* end media query for desktop */

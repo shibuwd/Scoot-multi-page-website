@@ -31,14 +31,6 @@
     --fw-700: 700;
 }
 
-/* sign up section */
-.signup h6 {
-    font-size: var(--fs-m-v2-700);
-    text-align: center;
-}
-/* end sign up section */
-
-
 /* general section */
 .general-container {
     display: flex;
@@ -68,6 +60,15 @@
     margin-bottom: .5rem;
 }
 /* end general section */
+
+
+/* sign up section */
+.signup h6 {
+    font-size: var(--fs-m-v2-700);
+    text-align: center;
+}
+
+/* end sign up section */
 
 
 /* media query for tablet */
