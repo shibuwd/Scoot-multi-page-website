@@ -1,0 +1,87 @@
+:root {
+    /* colors */
+    --yellow: hsl(40, 97%, 58%);
+    --dark: hsl(215, 14%, 23%);
+    --dark-navy: hsl(216, 17%, 35%);
+    --dim-grey: hsl(217, 12%, 62%);
+    --light-grey: hsl(212, 41%, 93%);
+    --snow: hsl(214, 37%, 96%);
+    --light-yellow: hsl(39, 100%, 94%);
+
+    /* font size for mobile */
+    --fs-m-v1-700: 2.5rem;
+    --fs-m-v2-700: 2rem;
+    --fs-m-v3-700: 1.5rem;
+    --fs-m-v4-700: 1.125rem;
+
+    /* font familly for tablet & desktop*/
+    --ff-body: 'Lexend Deca', sans-serif;
+    --ff-heading: 'Space Mono', monospace;
+
+    /* font size */
+    --fs-400: .938rem;
+    --fs-v1-700: 3.5rem;
+    --fs-v2-700: 3rem;
+    --fs-v3-700: 2.5rem;
+    --fs-v4-700: 1.5rem;
+    --fs-v5-700: 1.125rem;
+
+    /* font weight */
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+/* sign up section */
+.signup h6 {
+    font-size: var(--fs-m-v2-700);
+    text-align: center;
+}
+/* end sign up section */
+
+
+/* general section */
+.general-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem 0;
+    text-align: center;
+}
+
+.general {
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    color: var(--dark-navy);
+    background-color: var(--snow);
+}
+
+.general-desc {
+    margin-bottom: 1.5rem;
+}
+
+.general-desc h5 {
+    font-size: var(--fs-m-v4-700);
+    margin-bottom: .5rem;
+}
+/* end general section */
+
+
+/* media query for tablet */
+@media only screen and  (min-width: 768px) {
+    .general {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2.5rem 2rem;
+        text-align: left;
+        width: 90vw;
+    }
+
+    .general-desc h5 {
+        font-size: var(--fs-v4-700);
+    }
+}
